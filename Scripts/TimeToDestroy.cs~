@@ -1,0 +1,22 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class TimeToDestroy : MonoBehaviour {
+
+	public float time;
+
+	// Use this for initialization
+	void Start () {
+		
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		if ( time < 0)
+			Destroy (gameObject);
+			else 
+				time -=1;
+		
+	}
+}
